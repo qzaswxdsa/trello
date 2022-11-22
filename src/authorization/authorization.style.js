@@ -1,14 +1,20 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export const Body = styled.body`
+export const MainBackground = styled.div`
   font-family: "Roboto Mono", monospace;
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(135deg, #daf2e4 1%, #002661 100%);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+`;
+
+export const ContentDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 `;
 
 export const LogoTrello = styled.div`
@@ -20,18 +26,6 @@ export const LogoTrello = styled.div`
 export const EntryField = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-export const InputBlank = styled.input`
-  cursor: default;
-  outline: none;
-  border: none;
-  width: 300px;
-  border-bottom: 1px solid white;
-  background-color: transparent;
-  margin-bottom: 40px;
-  opacity: 0;
-  padding: 5px;
 `;
 
 export const Input = styled.input`
@@ -58,54 +52,6 @@ export const Input = styled.input`
     color: white;
     opacity: 1;
   }
-`;
-
-export const ActionsSpan = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  width: 300px;
-  font-size: 14px;
-`;
-
-export const LogInSpan = styled.span`
-  ${(props) => {
-    switch (props.active) {
-      case "logIn":
-        return css`
-          color: white;
-          border-bottom: 2px solid white;
-          margin-right: 20px;
-          cursor: pointer;
-        `;
-      default:
-        return css`
-          color: white;
-          margin-right: 20px;
-          opacity: 0.5;
-          cursor: pointer;
-        `;
-    }
-  }}
-`;
-
-export const SignUpSpan = styled.span`
-  ${(props) => {
-    switch (props.active) {
-      case "signUp":
-        return css`
-          color: white;
-          border-bottom: 2px solid white;
-          cursor: pointer;
-        `;
-      default:
-        return css`
-          color: white;
-          opacity: 0.5;
-          cursor: pointer;
-        `;
-    }
-  }}
 `;
 
 export const SubmitButton = styled.button`

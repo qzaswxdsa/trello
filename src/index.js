@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AuthorizationApp from "./authorization/authorizationApp";
 import { createGlobalStyle } from "styled-components";
+import App from "./App";
 
 const Global = createGlobalStyle`
 * {
@@ -14,6 +14,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Global />
-    <AuthorizationApp />
+    <App />
   </React.StrictMode>
 );
