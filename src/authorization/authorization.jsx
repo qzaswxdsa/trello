@@ -4,7 +4,7 @@ import {
   LogoTrello,
   EntryField,
   SubmitButton,
-  Form,
+  FormInput,
 } from "./authorization.style";
 import { ActionsLinks, LogInLink, SignUpLink } from "./forms/input-style";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -18,12 +18,12 @@ const AuthorizationApp = () => {
         <ContentDiv>
           <LogoTrello>Trello</LogoTrello>
           <EntryField>
-            <Form>
+            <FormInput>
               <Routes>
                 <Route exact path="/logIn" element={<LogIn />} />
                 <Route exact path="/signUp" element={<SignUp />} />
               </Routes>
-            </Form>
+            </FormInput>
           </EntryField>
           <ActionsLinks>
             <LogInLink to="/logIn">Log In</LogInLink>

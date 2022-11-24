@@ -71,7 +71,7 @@ export const SubmitButton = styled.button`
   }
 `;
 
-export const Form = styled.form`
+export const FormInput = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
