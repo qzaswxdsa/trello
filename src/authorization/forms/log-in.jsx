@@ -1,4 +1,4 @@
-import { FormInput, Input } from "../authorization.style";
+import { Input } from "../authorization.style";
 const LogIn = () => {
   return (
     <>

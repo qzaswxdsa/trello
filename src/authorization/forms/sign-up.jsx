@@ -1,4 +1,4 @@
-import { Input, FormInput } from "../authorization.style";
+import { Input } from "../authorization.style";
 
 const SignUp = () => {
   return (
