@@ -1,9 +1,9 @@
-import { Input } from "../authorization.style";
+import { Input } from "./input-style";
 const LogIn = () => {
   return (
     <>
-      <Input placeholder={"E-mail"}></Input>
-      <Input placeholder={"Password"} type={"password"}></Input>
+      <Input placeholder={"E-mail"} />
+      <Input placeholder={"Password"} type={"password"} />
     </>
   );
 };
