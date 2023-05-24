@@ -15,7 +15,7 @@ export const AuthorisationForm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
 `;
 
 export const LogoTrello = styled.div`
@@ -41,6 +41,10 @@ export const SubmitButton = styled.button`
   transition: 0.5s;
   letter-spacing: 1px;
   cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
   &:hover {
     color: black;
     background-color: white;
